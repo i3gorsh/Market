@@ -1,0 +1,138 @@
+body {
+	background: linear-gradient(rgba(0,0,0,.3),rgba(0,0,0,.3)), url(1.jpg);
+	font-family: sans-serif;
+	background-size: 100%;
+}
+
+.form {
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%,-50%);
+	background: #211b46;
+}
+
+.form h2 {
+	margin: 30px 100px;
+	padding: 0px;
+	text-align: center;
+	color: rgba(222,223,255,0.7);
+	font-size: 30px;
+	text-transform: uppercase;
+}
+
+.input-form {
+	margin: 15px 40px;
+	text-align: center;
+}
+
+.input-form input {
+	padding: 10px;
+	width: 100%;
+	color: rgba(222,223,255,0.7);
+	font-size: 20px;
+	background:rgba(255,255,255,0.05);
+	outline: none;
+	border: 1px solid rgba(225,219,255,0.1);
+	box-sizing: border-box;
+}
+
+.input-form input[type="text"]:focus, .input-form input[type="password"]:focus {
+	border: 1px solid #f43482;
+}
+
+.input-form input[type="submit"] {
+	color: #fff;
+	font-weight: bold;
+	text-transform: uppercase;
+	border: none;
+	background: #f43482;
+}
+
+.input-form input[type="submit"]:hover {
+	background: #4442db;
+}
+
+.form a {
+	display: block;
+	padding: 0 0 30px;
+	text-align: center;
+	color: rgba(222,223,255,0.7);
+	text-decoration: none;
+	font-size: 20px;
+}
+
+.form a:hover {
+	color: #0fc3f5;
+}
+
+
+
+.custom-radio>input {
+	position: absolute;
+	z-index: -1;
+	opacity: 0;
+  }
+
+  /* для элемента label связанного с .custom-radio */
+.custom-radio>span {
+	display: inline-flex;
+	align-items: center;
+	user-select: none;
+  }
+
+  /* создание в label псевдоэлемента  before со следующими стилями */
+.custom-radio>span::before {
+	content: '';
+	display: inline-block;
+	width: 1em;
+	height: 1em;
+	flex-shrink: 0;
+	flex-grow: 0;
+	border: 1px solid #adb5bd;
+	border-radius: 50%;
+	margin-right: 0.5em;
+	background-repeat: no-repeat;
+	background-position: center center;
+	background-size: 50% 50%;
+  }
+
+  /* стили при наведении курсора на радио */
+.custom-radio>input:not(:disabled):not(:checked)+span:hover::before {
+	border-color: #b3d7ff;
+  }
+
+  /* стили для активной радиокнопки (при нажатии на неё) */
+.custom-radio>input:not(:disabled):active+span::before {
+	background-color: #b3d7ff;
+	border-color: #b3d7ff;
+  }
+
+  /* стили для радиокнопки, находящейся в фокусе */
+.custom-radio>input:focus+span::before {
+	box-shadow: 0 0 0 0.2rem rgba(0, 123, 255, 0.25);
+  }
+
+  /* стили для радиокнопки, находящейся в фокусе и не находящейся в состоянии checked */
+.custom-radio>input:focus:not(:checked)+span::before {
+	border-color: #80bdff;
+  }
+
+  /* стили для радиокнопки, находящейся в состоянии checked */
+.custom-radio>input:checked+span::before {
+	border-color: #0b76ef;
+	background-color: #0b76ef;
+	background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='-4 -4 8 8'%3e%3ccircle r='3' fill='%23fff'/%3e%3c/svg%3e");
+  }
+
+  /* стили для радиокнопки, находящейся в состоянии disabled */
+.custom-radio>input:disabled+span::before {
+	background-color: #e9ecef;
+  }
+
+
+.radio {
+	margin-bottom: 0.2em;
+	padding: 0px 50px;
+	color:rgba(222,223,255,0.7) ;
+  }
